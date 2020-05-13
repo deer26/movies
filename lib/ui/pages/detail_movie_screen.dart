@@ -69,16 +69,20 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Container(
-                          height: 50.0,
-                          child: IconButton(
-                            color: Colors.white,
-                            icon: Icon(Icons.arrow_back),
-                            onPressed: () => Navigator.pop(context),
+                        Expanded(
+                          child: Container(
+                            height: 50.0,
+                            child: IconButton(
+                              color: Colors.white,
+                              icon: Icon(Icons.arrow_back,
+                              ),
+                              onPressed: () { 
+                                Navigator.pop(context);},
+                            ),
                           ),
                         ),
                         Container(
-                          width: 300,
+                          width: 250,
                           height: 60,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
